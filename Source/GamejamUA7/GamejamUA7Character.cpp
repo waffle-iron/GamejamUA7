@@ -47,7 +47,8 @@ AGamejamUA7Character::AGamejamUA7Character()
 void AGamejamUA7Character::SetupPlayerInputComponent(class UInputComponent* InputComponent)
 {
 	// set up gameplay key bindings
-	InputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
+	// Double jump doing with blueprints
+	// InputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
 	InputComponent->BindAction("Jump", IE_Released, this, &ACharacter::StopJumping);
 	InputComponent->BindAxis("MoveRight", this, &AGamejamUA7Character::MoveRight);
 
